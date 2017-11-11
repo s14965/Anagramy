@@ -13,7 +13,12 @@ public class TestIsAnagram {
 		
 		IsAnagram test = new IsAnagram();
 		
-		assertTrue(test.test("aba ba", "aba'ba"));
+		assertTrue(test.test("ababa", "aba'ba"));
+		assertTrue(test.test("Adolf's", "Faldo's"));
+		assertTrue(test.test("acb", "bca"));
+		assertTrue(test.test("Vedantisms", "Adventism's"));
+		assertTrue(test.test("hazards", "Adzhars"));
+		assertFalse(test.test("abdba", "aba'ba"));
 	}
 
 }

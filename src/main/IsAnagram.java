@@ -17,10 +17,10 @@ public class  IsAnagram
     String sc2 = new String(c2);
 
     String CopyofSc1 = sc1.replaceAll("'", "");
-    String CopyofSc2 = CopyofSc1.replaceAll(" ", "");
-    String CopyofSc3 = sc2.replaceAll("'", "");
-    String CopyofSc4 = CopyofSc3.replaceAll(" ", "");
+    
+    String CopyofSc2 = sc2.replaceAll("'", "");
+    
      
-    return CopyofSc3.equals(CopyofSc4);
+    return CopyofSc1.equals(CopyofSc2);
 	}
 }
